@@ -1,14 +1,14 @@
 {
   "name": "questions",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pub": "envision switchOrg apps && envision  deploy ./dist -v 1.0.0 -k questions"
+    "pub": "envision switchOrg apps && envision  deploy ./dist -v 1.0.1 -k questions"
   },
   "dependencies": {
     "@kevisual/envision-cli": "^0.0.18",
