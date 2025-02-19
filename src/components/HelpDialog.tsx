@@ -32,13 +32,16 @@ export const HelpDialog: React.FC<HelpDialogProps> = ({ isOpen, onClose }) => {
 
   const handleCopy = () => {
     const yamlExample = stringify({ questions: EXAMPLE_QUESTIONS });
-    const fullPrompt = `<content>Convert the following questions and answers into YAML format:
+    const fullPrompt = `Convert the following questions and answers into YAML format(in <content>):
 
+
+<content>
 ${promptText}
+</content>
 
 Example YAML format:
 
-${yamlExample}</content>`;
+${yamlExample}`;
 
     navigator.clipboard.writeText(fullPrompt).then(() => {
       setCopied(true);
