@@ -15,7 +15,7 @@ export const MarkedAnswer = ({ answer }: { answer: string }) => {
       onDoubleClick={() => {
         setFullScreen(!isFullScreen);
       }}
-      className={clsx('bg-gray-50 p-4 rounded-md markdown cursor-pointer', {
+      className={clsx('bg-gray-50 p-4 rounded-md markdown-body cursor-pointer', {
         'max-h-[150px] overflow-y-auto': !isFullScreen,
         'h-screen w-screen overflow-auto': isFullScreen,
         'fixed top-0 left-0 right-0 bottom-0 z-50': isFullScreen,

@@ -42,3 +42,13 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #cbd5e1 transparent;
 }
+
+.markdown-body {
+  ul,
+  li {
+    list-style: unset;
+  }
+  ol {
+    list-style: decimal;
+  }
+}
