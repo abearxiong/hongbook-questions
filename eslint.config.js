@@ -30,6 +30,7 @@ export default tseslint.config(
       '@typescript-eslint/no-use-before-define': 'warn',
       'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   }
 );
