@@ -1,20 +1,24 @@
 {
   "name": "questions",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pub": "envision switchOrg apps && envision  deploy ./dist -v 1.0.1 -k questions"
+    "pub": "envision switchOrg apps && envision  deploy ./dist -v 1.0.3 -k questions"
   },
   "dependencies": {
     "@kevisual/envision-cli": "^0.0.18",
+    "clsx": "^2.1.1",
+    "highlight.js": "^11.11.1",
     "idb": "^8.0.0",
     "immer": "^10.0.4",
     "lucide-react": "^0.344.0",
+    "marked": "^15.0.7",
+    "marked-highlight": "^2.2.1",
     "nanoid": "^5.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
